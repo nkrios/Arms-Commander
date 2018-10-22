@@ -1,4 +1,20 @@
+# The Nethunter Tablet/Phone Update
 
+Post FBI raid, I do not have a single asset to my name, except for my new Nethunter configured phone, a OnePlus One with Kali Nethunter installed on top of a Cyanogen Mod build.
+
+Very quickly I realized that Nethunter lacks a lot of polish...
+
+1. The sources.list still points to the non-existent sana repositories
+2. A lot of tools are incomplete
+3. The overlay for mitmf is inherently bugged
+4. Python-pip badly needs a upgrade
+5. Some apps, such as wifiphisher do not inherently run properly on Nethunter devices, despite being Python
+
+This is my attempt to remedy those issues by rolling out my own interface catered towards Nethunter Phone and Tablet users and primarily targets modernizing the MITMf.
+
+See the standalone repo for yourself:
+
+<a href="https://github.com/tanc7/Facerider">Facerider: Nethunter Modernizations and Fixes</a>
 
 # FBI Raid on LULLC HQ
 

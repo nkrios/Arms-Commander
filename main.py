@@ -9,8 +9,8 @@ import operator
 from termcolor import colored
 import sys
 # sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
-
-
+# sys.path.append("./nethunter/Facerider")
+os.chdir("/root/ArmsCommander")
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
 logfile_directory = '/root/ArmsCommander/logs'
 
@@ -808,6 +808,10 @@ def seven_book_learning():
         seven_book_learning()
     return
 
+def nethunter():
+    os.chdir("/root/ArmsCommander/nethunter")
+    os.system("python menu.py")
+    return
 def main():
     os.system('cat /root/ArmsCommander/banners/banner_mainmenu.txt\n\n')
     Menu_Header = colored('MAIN MENU', 'cyan', attrs=['bold'])
@@ -820,7 +824,8 @@ def main():
         '#4. Mobile Device Hacking',
         '#5. Wireless Attacks',
         '#6. Password Attacks',
-        '#7. Book Learning'
+        '#7. Book Learning',
+        '#8. Nethunter Phone/Tablet Specific Modules'
     ]
 
     print ("\n\t".join(opt_List))
@@ -851,6 +856,9 @@ def main():
     elif opt_Choice == "7":
         os.system('clear')
         seven_book_learning()
+    elif opt_Choice == "8":
+        os.system('clear')
+        nethunter()
     else:
         print colored('You have entered a invalid option','red')
         error_handling()

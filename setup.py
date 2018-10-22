@@ -67,6 +67,7 @@ def installer():
         os.system('mkdir /root/Cylon-Raider-Lite')
         os.system('cp -r ./* /root/Cylon-Raider-Lite')
         os.system('cp -r Cylon_Raider_Main.py /usr/local/bin')
+        os.system('pip install termcolor netifaces')
 
         # Inform the user it has been installed
 
